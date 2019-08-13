@@ -44,7 +44,7 @@ Now run the `Offence Watch Application`, which will continuously track the offen
 
 # Watch the Video
 
-Demo: https://ibm.box.com/s/meb1dwuetrfj0rl9mlef8wbxx27aaqme.
+[![](https://img.youtube.com/vi/E7g3JXRKQCQ/0.jpg)](https://youtu.be/E7g3JXRKQCQ)
 
 ## Pre-requisites
 * [IBM QRadar SIEM Community Edition](https://developer.ibm.com/qradar/ce/) : Please visit the site for download and installation instructions.
