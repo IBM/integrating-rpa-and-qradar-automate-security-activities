@@ -313,7 +313,7 @@ To work with the Offences Application, perform the following steps.
 **Validation Application**
 
 * The Validation Application validates the genuineness( valid/invalid ) of the offence.
-* The Validation Application sources are present in the folder `Java/validation` of the repo.
+* The Validation Application sources are present in the folder `java/validation` of the repo.
 * Check your environment before executing the next step. Make sure, you are able to run `mvn` commands properly.
    > If `mvn` commands fails, please refer to [Pre-requisites](#pre-requisites) to install maven.
 
