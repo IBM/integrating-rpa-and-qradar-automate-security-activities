@@ -230,11 +230,11 @@ You have successfully created rules to detect `speed` related offences. Now you 
 
 ![](doc/source/images/AA5.png)
 
-* Open the Automation Anywhere Client and follow the below steps to setup a trigger,
+* Open the Automation Anywhere Client and follow the steps below to setup a trigger. This trigger will be used to launch `Validation Bot` automatically, everytime a new offence is detected,
 
 <b>Step 1 :</b>Click on `Manage`.
 
-<b>Step 2 :</b>Click on `Trigger`.
+<b>Step 2 :</b>Click on `Triggers`.
 
 <b>Step 3 :</b>Click on `Add`.
 
