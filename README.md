@@ -66,11 +66,11 @@ Please follow the below to setup and run this code pattern.
 
 ### 1. Clone the repo
 
-Clone this [git repo](https://github.ibm.com/raravi86/RPA.git).
+Clone this [git repo](https://github.com/IBM/integrating-rpa-and-qradar-automate-security-activities.git).
 Else, in a terminal, run:
 
 ```
-$ git clone https://github.ibm.com/raravi86/RPA.git
+$ git clone https://github.com/IBM/integrating-rpa-and-qradar-automate-security-activities.git
 ```
 
 ### 2. Create rules to detect offences on QRadar
