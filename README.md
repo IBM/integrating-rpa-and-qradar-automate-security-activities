@@ -402,7 +402,7 @@ To work with the Validation Application, perform the following steps.
 <!--Optionally, include any troubleshooting tips (driver issues, etc)-->
 
 # Troubleshooting
-
+If you encounter any certificate related issues, refer to [TROUBLESHOOTING.md](https://github.com/IBM/integrating-rpa-and-qradar-automate-security-activities/TROUBLESHOOTING.md)
 
 <!-- keep this -->
 ## License
