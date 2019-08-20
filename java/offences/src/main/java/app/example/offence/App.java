@@ -8,6 +8,12 @@ import com.cloudbees.syslog.MessageFormat;
 import com.cloudbees.syslog.Severity;
 import com.cloudbees.syslog.sender.UdpSyslogMessageSender;
 
+/**
+ * 
+ * @author Rahul Reddy Ravipally
+ *
+ */
+
 public class App 
 {
     public static void main( String[] args ) throws IOException
