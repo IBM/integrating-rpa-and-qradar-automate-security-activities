@@ -249,16 +249,25 @@ You have successfully created rules to detect `speed` related offences. Now you 
 ![](doc/source/images/BB5.png)
 
 
-### 5. Update the paths in Validation Application
+### 5. Update the paths in Applications
 
-* The files `rules.txt` and `validation.txt`, that you had create in Step 3 and Step 4 respectively will be used here.
+* The files `rules.txt`, `validation.txt` and `trigger.txt`, that you had create in Step 3 and Step 4 respectively will be used here.
    
 **Validation Application**
 
-* Update the paths of `rules.txt` and `validation.txt` in `Validation.java` present at `/Java/validation/src/main/java/com/example/RPAValidation/`, as follows.
+* Update the paths of `rules.txt` and `validation.txt` in `Validation.java` present at `/java/validation/src/main/java/com/example/RPAValidation/Validation.java`.
+
+* Search for `String path_rules` and `String path_logs`, update as follows.
 
 ![](doc/source/images/paths.png)
 
+**Offence Check Application**
+
+* Update the paths of `rules.txt` and `validation.txt` in `QRadar.java` present at `/java/check/src/main/java/app/example/RoboticProcessAutomation/QRadar.java`. 
+
+* Search for `String path_trigger`, update as follows.
+
+![](doc/source/images/path_trigger.png)
 
 ### 6. Build the Applications using Maven
 
