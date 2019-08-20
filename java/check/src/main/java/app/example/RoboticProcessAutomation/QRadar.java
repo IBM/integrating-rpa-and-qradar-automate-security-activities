@@ -123,7 +123,7 @@ public class QRadar {
 					System.out.println("Offence Name : "+jsonObj.get("offense_source").toString());
 					TimeUnit.MILLISECONDS.sleep(1000);
 					System.out.println("Running the validation bot, to check if the offence is valid");
-					String path_trigger = "C:\\Users\\Administrator\\Desktop\\trigger.txt"; 
+					String path_trigger = ""; 
 					Files.write(Paths.get(path_trigger), content.getBytes());					
 				}
 			}
