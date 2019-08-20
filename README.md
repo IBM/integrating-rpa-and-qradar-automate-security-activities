@@ -59,7 +59,7 @@ Please follow the below to setup and run this code pattern.
 2. [Create rules to detect offences on QRadar](#2-create-rules-to-detect-offences-on-QRadar)
 3. [Setup the Rules Extraction Bot](#3-setup-the-rules-extraction-bot)
 4. [Setup the Validation Bot](#4-setup-the-validation-bot)
-5. [Update the paths in Validation Application](#5-update-the-paths-in-validation-application)
+5. [Update the paths in Applications](#5-update-the-paths-in-applications)
 6. [Build the Applications using Maven](#6-build-the-applications-using-maven)
 7. [Run the Applications and analyze the results](#7-run-the-applications-and-analyze-the-results)
 
