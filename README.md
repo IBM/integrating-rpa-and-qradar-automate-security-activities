@@ -263,7 +263,7 @@ You have successfully created rules to detect `speed` related offences. Now you 
 
 **Offence Check Application**
 
-* Update the paths of `rules.txt` and `validation.txt` in `QRadar.java` present at `/java/check/src/main/java/app/example/RoboticProcessAutomation/QRadar.java`. 
+* Update the path of `trigger.txt` in `QRadar.java` present at `/java/check/src/main/java/app/example/RoboticProcessAutomation/QRadar.java`. 
 
 * Search for `String path_trigger`, update as follows.
 
