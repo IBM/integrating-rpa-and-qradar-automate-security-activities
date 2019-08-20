@@ -8,6 +8,12 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * 
+ * @author Rahul Reddy Ravipally
+ *
+ */
+
 public class Validation {
 	public static void main(String args[]) throws IOException {
 		
@@ -17,10 +23,8 @@ public class Validation {
 		int logcount = 0;
 		
 		   final String dir = System.getProperty("user.dir");
-	       //String path_rules = dir + "\\src\\main\\java\\com\\example\\RPAValidation\\rules.txt";
-	       //String path_logs = dir + "\\src\\main\\java\\com\\example\\RPAValidation\\logscount.txt";
-		   String path_rules = "C:\\Users\\Administrator\\Desktop\\rules.txt";
-		   String path_logs = "C:\\Users\\Administrator\\Desktop\\logscount.txt";
+		   String path_rules = ""; // Update this with absolute path of rules.txt file
+		   String path_logs = ""; // Update this with absolute path of validation.txt file
 		
 		BufferedReader in = new BufferedReader(new FileReader(path_rules));
 		String line;
@@ -31,19 +35,16 @@ public class Validation {
 		}
 		for (int i=0;i < allStrings.size();i++)
 		{
-			String regex = "and when at least [0-9]* events or flows are seen with the same Event Name, Source IP in [0-9]* minutes"; 
+			
+		String regex = "and when at least [0-9]* events or flows are seen with the same Event Name, Source IP in [0-9]* minutes"; 
 			  
-	        // Create a pattern from regex 
 	        Pattern pattern 
 	            = Pattern.compile(regex);
 	  
-	        // Create a matcher for the input String 
 	        Matcher matcher 
 	            = pattern 
 	                  .matcher(allStrings.get(i).toString()); 
 	  
-	        // Get the subsequence 
-	        // using find() method 
 	        if(matcher.find()) { 
 			  Pattern p = Pattern.compile("\\d+");
 		      Matcher m = p.matcher(allStrings.get(i).toString());
