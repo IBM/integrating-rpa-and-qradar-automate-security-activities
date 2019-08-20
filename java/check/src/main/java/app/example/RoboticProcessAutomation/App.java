@@ -11,10 +11,11 @@ import app.example.RoboticProcessAutomation.QRadar;
 import org.json.simple.parser.ParseException;
 
 
-
-
-
-
+/**
+ * 
+ * @author Rahul Reddy Ravipally
+ *
+ */
 
 public class App 
 {
@@ -30,13 +31,6 @@ public class App
 		System.out.println("Enter your QRadar hostname/IP Address:");
 		final String host_qradar = scanner.nextLine();
 
-//		System.out.println("Enter your Resilient email:");
-//		final String email = scanner.nextLine();
-//		System.out.println("Enter your Resilient password:");
-//		final String resilient_password = scanner.nextLine();
-//		System.out.println("Enter your Resilient hostname/IP Address:");
-//		final String host_resilient = scanner.nextLine();
-
 		scanner.close();
 
 		final QRadar q = new QRadar(name, password, host_qradar);
@@ -45,9 +39,7 @@ public class App
 
 			@Override
 			public void run() {
-//				ArrayList<String> s = null;
 				try {
-//					s = q.send_offences(ar);
 					q.send_offences(ar);
 				} catch (ClientProtocolException e) {
 					e.printStackTrace();
@@ -59,17 +51,6 @@ public class App
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-
-//				if (!s.isEmpty()) {
-//
-//					for (int i = 0; i < s.size(); i++) {
-//						ar.add(s.get(i));
-//						System.out.println("Successfully sent offence id " + s.get(i) + " to resilient");
-//						System.out.println("Offence ID's that are sent to resilient : " + ar);
-//					}
-//				} else {
-//					System.out.println("Waiting for new offences");
-//				}
 
 			}
 
