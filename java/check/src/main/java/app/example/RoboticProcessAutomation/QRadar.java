@@ -41,10 +41,6 @@ public class QRadar {
 	String name = "";
 	String password = "";
 	String host_qradar = "";
-
-	String email = "";
-	String resilient_password = "";
-	String host_resilient = "";
 	
 	String content = "Trigger the validation bot";
 	
@@ -54,9 +50,6 @@ public class QRadar {
 	 * @param name 
 	 * @param password
 	 * @param host_qradar
-	 * @param email
-	 * @param resilient_password
-	 * @param host_resilient
 	 */
 	
 	public QRadar(String name, String password, String host_qradar) {
@@ -65,18 +58,6 @@ public class QRadar {
 		this.host_qradar = host_qradar;
 
 	}
-
-//	Resilient r = new Resilient();
-	
-	/**
-	 * Send offences to Resilient Class.
-	 * 
-	 * @param ids
-	 * @return new_ids
-	 * @throws ClientProtocolException
-	 * @throws IOException
-	 * @throws ParseException
-	 */
 
 	ArrayList<String> new_ids = new ArrayList<String>(); // All the new offence id's are added here.
 	
@@ -144,25 +125,9 @@ public class QRadar {
 					System.out.println("Running the validation bot, to check if the offence is valid");
 					String path_trigger = "C:\\Users\\Administrator\\Desktop\\trigger.txt"; 
 					Files.write(Paths.get(path_trigger), content.getBytes());					
-//					if (jsonObj.get("offense_source").toString().equals("speeding violation")
-//							|| jsonObj.get("offense_source").toString().equals("wrong location")) {
-//						System.out.println("PREPARING TO SEND THE OFFENCE : " + jsonObj);
-//
-//						r.set_org(email, resilient_password, host_resilient);
-//						String res = r.create_incident(jsonObj.get("offense_source").toString(),
-//								jsonObj.get("description").toString(), jsonObj.get("severity").toString(),
-//								jsonObj.get("start_time").toString());
-//
-//						System.out.println(
-//								"SENT THE OFFENCE WITH ID : " + jsonObj.get("id").toString() + " TO RESILIENT");
-//
-//						System.out.println(res);
-//					}
 				}
 			}
 		}
-
-		// return new_ids;
 
 	}
 
